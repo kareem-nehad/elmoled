@@ -1,4 +1,6 @@
 import 'package:elmoled/constants.dart';
+import 'package:elmoled/screens/intro_screen/intro_screen.dart';
+import 'package:elmoled/screens/login_screen/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
@@ -18,13 +20,10 @@ class MyApp extends StatelessWidget {
         fontFamily: fontFamily,
         primarySwatch: primaryBlack
       ),
-      home: IntroductionScreen(
-        pages: introPages,
-        skip: const Text('Skip'),
-        showNextButton: false,
-        showSkipButton: true,
-        showDoneButton: false,
-      ),
+      home: const IntroScreen(),
+      routes: {
+        '/login' : (context) => const LoginPage(),
+      },
     );
   }
 }

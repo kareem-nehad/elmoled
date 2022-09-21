@@ -99,6 +99,13 @@ const MaterialColor primaryBlack = MaterialColor(
   },
 );
 
+// Colors
+const primary = Color(0xFFE64243);
+const white = Colors.white;
+const black  = Colors.black;
+const lightGrey = Color(0xFFD8D9DD);
+const fbBlue = Color(0xFF4267B2);
+
 // Fonts
 const fontFamily = 'Rubik';
 const regularFont = FontWeight.w400;
